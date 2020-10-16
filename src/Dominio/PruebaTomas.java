@@ -1,9 +1,10 @@
+package Dominio;
 
-public class Prueba {
+public class PruebaTomas {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		System.out.println("Hola");
+		System.out.println("Prueba Tomás");
 	}
 
 }
