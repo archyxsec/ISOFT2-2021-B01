@@ -15,8 +15,17 @@ public class Camarero extends Empleado {
 	}
 	
 	public String toString() {
+		
+		String mesas = "(";
+		for (Mesa mesa : mesasAsignadas) {
+			mesas += mesa.getId_Mesa()+", ";
+		}
+		
+		if (mesas.length()>=2)mesas = mesas.substring(0, mesas.length()-2);
+		mesas +=")";
+		
 		return "Camarero [Id_Empleado=" + Id_Empleado + ", Nombre=" + Nombre + ", Apellidos=" + Apellidos
-				+ ", num_Cuenta=" + num_Cuenta + "]";
+				+ ", num_Cuenta=" + num_Cuenta + ", mesasAsignadas=" + mesas+ "]";
 	}
 
 	

@@ -36,11 +36,11 @@ public class GestorCamarero {
 		throw new UnsupportedOperationException();
 	}
 	
-	public Camarero [] crearCamareros() {
+	public ArrayList<Camarero> crearCamareros() {
 		
 		Random random = new Random();
 		
-		Camarero[] camareros = new Camarero [6];
+		ArrayList<Camarero>camareros = new ArrayList<Camarero>();
 		
 		for (int i = 0; i < 6; i++) {
 			
@@ -55,7 +55,7 @@ public class GestorCamarero {
 			}
 			
 			Camarero camarero = new Camarero(Integer.toString(i+1), nombreCamarero, apellidos, Integer.toString(ThreadLocalRandom.current().nextInt(10000000,99999999)));
-			camareros[i]=camarero;
+			camareros.add(camarero);
 			
 		
 		}
@@ -63,12 +63,13 @@ public class GestorCamarero {
 		return camareros;
 	}
 	
-	public void imprimirCamareros(Camarero[]camareros) {
+	public void imprimirCamareros(ArrayList<Camarero>camareros) {
 		
 		System.out.println("Lista de camareros:\n");
-		for (int i = 0; i < camareros.length; i++) {
-			System.out.println(camareros[i].toString());
+		for (Camarero camarero : camareros) {
+			System.out.println(camarero.toString());
 		}
+		
 		
 	}
 

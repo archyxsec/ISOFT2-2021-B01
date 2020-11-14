@@ -1,5 +1,7 @@
 package es.uclm.esi.isoft2b01.iteracion1.Dominio;
 
+import java.util.ArrayList;
+
 public class GestoMesa {
 	
 	
@@ -20,22 +22,29 @@ public class GestoMesa {
 		return resultado;
 	}
 	
-	public Mesa[] crearMesas(int numeroMesas) {
+	public ArrayList <Mesa> crearMesas(int numeroMesas) {
 		
-		Mesa [] mesas = new Mesa [numeroMesas];
-		
-		System.out.println("Lista de mesas:\n");
+		ArrayList<Mesa> mesas = new ArrayList<Mesa>();
 		
 		for (int i = 0; i < numeroMesas; i++) {
 			Mesa mesa = new Mesa(i+1,Capacidad.random());
-			mesas[i]=mesa;
-			System.out.println(mesa.toString());
+			mesas.add(mesa);
+			
 		}
-		System.out.println();
-		
+
 		
 		return mesas;
 		
+	}
+	
+	public void imprimirMesas(ArrayList<Mesa> mesas) {
+		
+		System.out.println("Lista de mesas:\n");
+		
+		for (Mesa mesa : mesas) {
+			System.out.println(mesa.toString());
+		}
+			
 	}
 
 }

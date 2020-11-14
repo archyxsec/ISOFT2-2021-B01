@@ -2,6 +2,7 @@ package es.uclm.esi.isoft2b01.iteracion1.Presentacion;
 
 import java.util.Scanner;
 import java.util.Random;
+import java.util.ArrayList;
 
 import es.uclm.esi.isoft2b01.iteracion1.Dominio.Camarero;
 import es.uclm.esi.isoft2b01.iteracion1.Dominio.GestoMesa;
@@ -12,8 +13,8 @@ public class IU_AsignarMesa {
 	public static void main(String [] args) {
 		GestoMesa gestorMesa = new GestoMesa();
 		GestorCamarero gestorCamarero = new GestorCamarero();
-		Mesa [] mesas = gestorMesa.crearMesas(5);
-		Camarero [] camareros = gestorCamarero.crearCamareros();;
+		ArrayList<Mesa> mesas = gestorMesa.crearMesas(5);
+		ArrayList<Camarero> camareros = gestorCamarero.crearCamareros();
 		
 		Scanner reader = new Scanner(System.in);
 		boolean salir = false;
@@ -21,31 +22,60 @@ public class IU_AsignarMesa {
 		while (!salir) {
 		int id_Mesa = -1;	
 		int id_Camarero = -1;
-		System.out.println("Introduzca el id de la mesa que desea asignar");
-		id_Mesa = reader.nextInt();
 		
-		if (gestorMesa.MarcarMesa(mesas[id_Mesa-1])) {
-			System.out.println("Mesa ocupada con exito");
+		gestorMesa.imprimirMesas(mesas);
+		
+		while(true) {
+		
+			System.out.println("\nIntroduzca el id de la mesa que desea asignar");
+							
+			try {
+				id_Mesa = reader.nextInt()-1;
+				
+				if (id_Mesa >=0 && id_Mesa < mesas.size())
+					break;
+				
+				System.out.println("ERROR: No existe una mesa con ese id. ");
+			} catch (Exception e) {
+				System.out.println("ERROR: Debe introducir un valor entero.");
+				reader.next();
+			}
+			
+			
+		}
+		
+		if (gestorMesa.MarcarMesa(mesas.get(id_Mesa))){
+			System.out.println("Mesa ocupada con exito\n");
 			
 			gestorCamarero.imprimirCamareros(camareros);
-			
-			System.out.println("Introduzca el id del camarero que desea asignar a esta mesa:");
-			id_Camarero = reader.nextInt();
-			
-			//System.out.println(camareros[id_Camarero].getMesasAsignadas().isEmpty());
-			
-			if(gestorCamarero.AsignarMesa(mesas[id_Mesa], camareros[id_Camarero])) {
 				
+			while(true) {
 				
-				
+				System.out.println("\nIntroduzca el id del camarero que desea asignar a esta mesa:");
+								
+				try {
+					id_Camarero = reader.nextInt()-1;
+					
+					if (id_Camarero >=0 && id_Camarero < camareros.size())
+						break;
+					
+					System.out.println("ERROR: No existe un camarero con ese id. ");
+				} catch (Exception e) {
+					System.out.println("ERROR: Debe introducir un valor entero.");
+					reader.next();
+				}
+								
+			}
+						
+			
+			if(gestorCamarero.AsignarMesa(mesas.get(id_Mesa), camareros.get(id_Camarero))) {
+							
 				System.out.println("Camarero asignado");
-				//System.out.println(camareros[id_Camarero].getMesasAsignadas().isEmpty());
+				
 			}
 			else
 				System.out.println("No se pudo asignar el camarero");
-				
-			
-			
+	
 		}
 		else
 			System.out.println("Mesa ya ocupada");
