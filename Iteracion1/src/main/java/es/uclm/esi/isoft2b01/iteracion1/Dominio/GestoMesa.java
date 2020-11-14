@@ -8,7 +8,10 @@ public class GestoMesa {
 	 */
 	public boolean MarcarMesa(int Id_Mesa) {
 		// TODO - implement GestoMesa.MarcarMesa
-		throw new UnsupportedOperationException();
+		System.out.println("El id de la mesa es: "+ Id_Mesa);
+		
+		//throw new UnsupportedOperationException();
+		return false;
 	}
 
 }
