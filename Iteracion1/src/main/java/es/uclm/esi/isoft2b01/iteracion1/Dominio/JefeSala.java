@@ -2,6 +2,11 @@ package es.uclm.esi.isoft2b01.iteracion1.Dominio;
 
 public class JefeSala extends Empleado {
 
+	public JefeSala(String id_Empleado, String nombre, String apellidos, String num_Cuenta) {
+		super(id_Empleado, nombre, apellidos, num_Cuenta);
+		// TODO Auto-generated constructor stub
+	}
+
 	/**
 	 * 
 	 * @param Id_Mesa
