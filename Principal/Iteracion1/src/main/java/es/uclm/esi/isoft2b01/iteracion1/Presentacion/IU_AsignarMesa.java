@@ -16,6 +16,11 @@ public class IU_AsignarMesa {
 		ArrayList<Mesa> mesas = gestorMesa.crearMesas(5);
 		ArrayList<Camarero> camareros = gestorCamarero.crearCamareros();
 		
+//		Mesa m = new Mesa(1);
+//		Camarero c = new Camarero("04", "Roro", "moreno", "0001");
+//		System.out.println(gestorCamarero.AsignarMesa(m,c));
+//		System.out.println(gestorCamarero.AsignarMesa(m,c));
+		
 		Scanner reader = new Scanner(System.in);
 		boolean salir = false;
 		

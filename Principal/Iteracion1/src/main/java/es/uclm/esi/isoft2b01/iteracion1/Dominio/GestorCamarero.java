@@ -13,13 +13,15 @@ public class GestorCamarero {
 	 * @param m
 	 * @param C
 	 */
+	
+	
 	public boolean AsignarMesa(Mesa m, Camarero C) {
 		// TODO - implement GestorCamarero.AsignarMesa
 		boolean resultado = false;
 		
 		ArrayList<Mesa>mesasAsignadas=C.getMesasAsignadas();
 		
-		if (!mesasAsignadas.contains(m.getId_Mesa())) {
+		if (!mesasAsignadas.contains(m)) {
 			C.asignarMesa(m);
 			resultado = true;
 		}

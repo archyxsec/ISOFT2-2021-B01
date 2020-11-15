@@ -34,6 +34,10 @@ public class Camarero extends Empleado {
 	
 	}
 	
+	public void setNullMesasAsignadas() {
+		mesasAsignadas = null;
+	}
+	
 	public void asignarMesa(Mesa mesa) {
 		mesasAsignadas.add(mesa);
 	}
