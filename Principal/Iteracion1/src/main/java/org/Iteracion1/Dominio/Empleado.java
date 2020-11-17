@@ -2,9 +2,9 @@ package Dominio;
 
 public class Empleado {
 
-	private string Id_Empleado;
-	private string Nombre;
-	private string Apellidos;
-	private string num_Cuenta;
+	private String Id_Empleado;
+	private String Nombre;
+	private String Apellidos;
+	private String num_Cuenta;
 
 }

@@ -15,7 +15,7 @@ public class JefeSala extends Empleado {
 	 * 
 	 * @param Id_Empleado
 	 */
-	public boolean AsignarCamarero(string Id_Empleado) {
+	public boolean AsignarCamarero(String Id_Empleado) {
 		// TODO - implement JefeSala.AsignarCamarero
 		throw new UnsupportedOperationException();
 	}
