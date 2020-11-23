@@ -1,4 +1,4 @@
-package org.Iteracion1;
+package es.uclm.esi.isoft2b01.iteracion1;
 
 /**
  * Hello world!
