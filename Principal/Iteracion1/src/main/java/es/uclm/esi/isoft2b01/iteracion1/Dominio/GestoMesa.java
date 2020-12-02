@@ -10,5 +10,10 @@ public class GestoMesa {
 		// TODO - implement GestoMesa.MarcarMesa
 		throw new UnsupportedOperationException();
 	}
+	
+	public boolean cambiarEstadoMesa(Mesa m, EstadoMesa estado) {
+		m.cambiarEstado(estado);
+		return true;
+	}
 
 }
