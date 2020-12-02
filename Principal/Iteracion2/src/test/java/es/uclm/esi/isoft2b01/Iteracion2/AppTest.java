@@ -1,4 +1,4 @@
-package org.Iteracion2;
+package es.uclm.esi.isoft2b01.Iteracion2;
 
 import static org.junit.Assert.assertTrue;
 

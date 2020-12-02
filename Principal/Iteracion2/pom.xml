@@ -28,6 +28,11 @@
       <version>4.11</version>
       <scope>test</scope>
     </dependency>
+    <dependency>
+      <groupId>es.uclm.esi.isoft2b01.iteracion1</groupId>
+  	  <artifactId>Iteracion1</artifactId>
+  	  <version>0.0.1-SNAPSHOT</version>
+    </dependency>
   </dependencies>
 
   <build>
