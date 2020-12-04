@@ -5,7 +5,7 @@
   <modelVersion>4.0.0</modelVersion>
 
   <groupId>es.uclm.esi.isoft2b01</groupId>
-  <artifactId>Principal</artifactId>
+  <artifactId>ISOFT2B01</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   <packaging>pom</packaging>
 
