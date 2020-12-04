@@ -2,17 +2,16 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
   <parent>
-    <artifactId>ISOFT2B01</artifactId>
-    <groupId>es.uclm.esi.isoft2b01</groupId>
+    <artifactId>Principal</artifactId>
+    <groupId>es.uclm.esi.isoft2b01.principal</groupId>
     <version>0.0.1-SNAPSHOT</version>
   </parent>
 
-  <groupId>es.uclm.esi.isoft2b01.principal</groupId>
-  <artifactId>Principal</artifactId>
+  <groupId>es.uclm.esi.isoft2b01.iteracion3</groupId>
+  <artifactId>Iteracion3</artifactId>
   <version>0.0.1-SNAPSHOT</version>
-  <packaging>pom</packaging>
 
-  <name>Principal</name>
+  <name>Iteracion3</name>
   <!-- FIXME change it to the project's website -->
   <url>http://www.example.com</url>
 
@@ -76,9 +75,4 @@
       </plugins>
     </pluginManagement>
   </build>
-  <modules>
-  	<module>Iteracion1</module>
-    <module>Iteracion2</module>
-    <module>Iteracion3</module>
-  </modules>
 </project>
