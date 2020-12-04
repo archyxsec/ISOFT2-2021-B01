@@ -1,4 +1,4 @@
-package es.uclm.esi.isoft2b01.Principal;
+package es.uclm.esi.isoft2b01.ISOFT2B01;
 
 /**
  * Hello world!
