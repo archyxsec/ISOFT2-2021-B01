@@ -1,0 +1,8 @@
+-------------------------------------------------------------------------------
+Test set: es.uclm.esi.isoft2b01.iteracion3.Dominio.PlatoTest
+-------------------------------------------------------------------------------
+Tests run: 2, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.162 s <<< FAILURE! - in es.uclm.esi.isoft2b01.iteracion3.Dominio.PlatoTest
+testGetIngredientes(es.uclm.esi.isoft2b01.iteracion3.Dominio.PlatoTest)  Time elapsed: 0.027 s  <<< FAILURE!
+org.junit.internal.ArrayComparisonFailure: arrays first differed at element [0]; expected:<es.uclm.esi.isoft2b01.iteracion3.Dominio.Ingredientes@53fb3dab> but was:<es.uclm.esi.isoft2b01.iteracion3.Dominio.Ingredientes@cb0755b>
+	at es.uclm.esi.isoft2b01.iteracion3.Dominio.PlatoTest.testGetIngredientes(PlatoTest.java:38)
+

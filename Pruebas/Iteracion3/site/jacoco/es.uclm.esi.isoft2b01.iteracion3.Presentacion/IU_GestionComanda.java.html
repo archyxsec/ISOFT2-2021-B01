@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>IU_GestionComanda.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">Iteracion3</a> &gt; <a href="index.source.html" class="el_package">es.uclm.esi.isoft2b01.iteracion3.Presentacion</a> &gt; <span class="el_source">IU_GestionComanda.java</span></div><h1>IU_GestionComanda.java</h1><pre class="source lang-java linenums">package es.uclm.esi.isoft2b01.iteracion3.Presentacion;
+
+import java.util.Scanner;
+
+import es.uclm.esi.isoft2b01.iteracion3.Dominio.GestorComanda;
+import es.uclm.esi.isoft2b01.Iteracion2.Dominio.Comanda;
+import es.uclm.esi.isoft2b01.Iteracion2.Dominio.GestorPedido;
+import es.uclm.esi.isoft2b01.Iteracion2.Dominio.Pedido;
+import es.uclm.esi.isoft2b01.iteracion1.Dominio.Capacidad;
+import es.uclm.esi.isoft2b01.iteracion1.Dominio.EstadoMesa;
+import es.uclm.esi.isoft2b01.iteracion1.Dominio.GestoMesa;
+import es.uclm.esi.isoft2b01.iteracion1.Dominio.Mesa;
+
+<span class="nc" id="L14">public class IU_GestionComanda {</span>
+	public static void main(String args[]) {
+		Scanner sc;
+<span class="nc" id="L17">		sc = new Scanner(System.in);</span>
+		int opcion;
+		
+<span class="nc" id="L20">		sc = new Scanner(System.in); //Para no estropear el buffer</span>
+<span class="nc" id="L21">		Comanda co = null;</span>
+<span class="nc" id="L22">		System.out.print(&quot;Introduce el plato de la comanda: (Si no introduce Ninguno &quot;);</span>
+<span class="nc" id="L23">		String plato = sc.nextLine();</span>
+<span class="nc" id="L24">		System.out.println();</span>
+<span class="nc" id="L25">		System.out.print(&quot;Introduce la bebida de la comanda: (Si no introduce Ninguno) &quot;);</span>
+<span class="nc" id="L26">		String bebida = sc.nextLine();</span>
+<span class="nc" id="L27">		System.out.println();</span>
+<span class="nc bnc" id="L28" title="All 2 branches missed.">		if(plato.isEmpty()) plato = &quot;Ninguno&quot;;</span>
+<span class="nc bnc" id="L29" title="All 2 branches missed.">		if(bebida.isEmpty()) bebida = &quot;Ninguno&quot;;</span>
+<span class="nc bnc" id="L30" title="All 4 branches missed.">		if(!plato.isEmpty() &amp;&amp; plato.equalsIgnoreCase(&quot;Ninguno&quot;)) {</span>
+<span class="nc bnc" id="L31" title="All 4 branches missed.">			if(!bebida.isEmpty() &amp;&amp; bebida.equalsIgnoreCase(&quot;Ninguno&quot;)) {</span>
+<span class="nc" id="L32">				System.out.println(&quot;Tienes que introducir una comanda válida&quot;);</span>
+			}
+<span class="nc" id="L34">		}else co = new Comanda(plato,bebida);</span>
+<span class="nc" id="L35">		System.out.println(&quot;Introduce el id del pedido&quot;);</span>
+<span class="nc" id="L36">		int id = sc.nextInt();</span>
+<span class="nc bnc" id="L37" title="All 2 branches missed.">		while (id &lt; 0) {</span>
+<span class="nc" id="L38">			System.out.println(&quot;Escribe un id válido&quot;);</span>
+		}
+<span class="nc" id="L40">		Pedido p = new Pedido(id);</span>
+<span class="nc" id="L41">		String result = AnotarComanda(co,p);</span>
+<span class="nc" id="L42">		System.out.println(result);</span>
+<span class="nc bnc" id="L43" title="All 2 branches missed.">		if(result.equals(&quot;La comanda ha sido anotada&quot;)) {</span>
+			/*Cambiamos el estado de la mesa*/
+<span class="nc" id="L45">			System.out.println(&quot;Introduce el número de mesa&quot;);</span>
+<span class="nc" id="L46">			int n_mesa = sc.nextInt();</span>
+<span class="nc" id="L47">			Mesa m = new Mesa(n_mesa, Capacidad.random());</span>
+<span class="nc" id="L48">			System.out.println(CambiarEstadoMesa(m,EstadoMesa.Espera_Comida));</span>
+<span class="nc" id="L49">			System.out.println(m.toString());</span>
+<span class="nc" id="L50">			avisarPersonal(co);</span>
+		}
+<span class="nc" id="L52">	}</span>
+	private static String AnotarComanda(Comanda co,Pedido p) {
+<span class="nc" id="L54">		GestorComanda gc = new GestorComanda();</span>
+<span class="nc bnc" id="L55" title="All 2 branches missed.">		if(gc.Añadir_Comanda_a_Pedido(co, p)) return &quot;La comanda ha sido anotada&quot;;</span>
+<span class="nc" id="L56">		else return &quot;No ha podido añadirse la comanda&quot;;</span>
+	}
+	
+	
+	
+	private static String CambiarEstadoMesa(Mesa m,EstadoMesa estado) {
+<span class="nc" id="L62">		GestoMesa gm = new GestoMesa();</span>
+<span class="nc" id="L63">		gm.cambiarEstadoMesa(m,estado);</span>
+<span class="nc" id="L64">		return &quot;El estado de la mesa se ha cambiado&quot;;</span>
+	}
+	
+	private static void avisarPersonal(Comanda co) {
+<span class="nc" id="L68">		System.out.println(&quot;[Cocinero]  Plato: &quot;+co.getPlato());</span>
+<span class="nc" id="L69">		System.out.println(&quot;[Camarero de Barra] Bebida: &quot;+co.getBebida());</span>
+<span class="nc" id="L70">	}</span>
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.7.9.201702052155</span></div></body></html>

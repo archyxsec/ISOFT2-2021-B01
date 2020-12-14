@@ -1,0 +1,8 @@
+-------------------------------------------------------------------------------
+Test set: es.uclm.esi.isoft2b01.iteracion3.Dominio.IngredientesTest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.016 s <<< FAILURE! - in es.uclm.esi.isoft2b01.iteracion3.Dominio.IngredientesTest
+Ingredientes(es.uclm.esi.isoft2b01.iteracion3.Dominio.IngredientesTest)  Time elapsed: 0.001 s  <<< FAILURE!
+org.junit.ComparisonFailure: expected:<[2-Pedro]> but was:<[es.uclm.esi.isoft2b01.iteracion3.Dominio.Ingredientes@7bd7d6d6]>
+	at es.uclm.esi.isoft2b01.iteracion3.Dominio.IngredientesTest.Ingredientes(IngredientesTest.java:36)
+

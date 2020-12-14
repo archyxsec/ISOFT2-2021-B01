@@ -1,0 +1,6 @@
+GROUP,PACKAGE,CLASS,INSTRUCTION_MISSED,INSTRUCTION_COVERED,BRANCH_MISSED,BRANCH_COVERED,LINE_MISSED,LINE_COVERED,COMPLEXITY_MISSED,COMPLEXITY_COVERED,METHOD_MISSED,METHOD_COVERED
+Iteracion3,es.uclm.esi.isoft2b01.iteracion3,App,7,0,0,0,3,0,2,0,2,0
+Iteracion3,es.uclm.esi.isoft2b01.iteracion3.Presentacion,IU_GestionComanda,164,0,18,0,40,0,14,0,5,0
+Iteracion3,es.uclm.esi.isoft2b01.iteracion3.Dominio,Plato,0,17,0,0,0,7,0,5,0,5
+Iteracion3,es.uclm.esi.isoft2b01.iteracion3.Dominio,Ingredientes,0,6,0,0,0,3,0,1,0,1
+Iteracion3,es.uclm.esi.isoft2b01.iteracion3.Dominio,GestorComanda,36,0,2,0,8,0,5,0,4,0
