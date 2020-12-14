@@ -4,7 +4,7 @@ public class Ingredientes {
 	
 	public String ingredientes;
 	
-	public void Ingrediente(String ingredientes) {
+	public Ingredientes(String ingredientes) {
 		this.ingredientes=ingredientes;
 	}
 }
