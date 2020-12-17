@@ -1,12 +1,21 @@
 package es.uclm.esi.isoft2b01.iteracion3.Dominio;
 
+import java.util.ArrayList;
+
 public class Plato {
 
-	private Ingredientes[] Ingredientes;
-	public Ingredientes[] getIngredientes() {
+	private ArrayList<Ingredientes> Ingredientes;
+	private float Precio;
+	
+	public Plato(ArrayList<Ingredientes> ingredientes, float precio) {
+		super();
+		Ingredientes = ingredientes;
+		Precio = precio;
+	}
+	public ArrayList<Ingredientes> getIngredientes() {
 		return Ingredientes;
 	}
-	public void setIngredientes(Ingredientes[] ingredientes) {
+	public void setIngredientes(ArrayList<Ingredientes> ingredientes) {
 		Ingredientes = ingredientes;
 	}
 	public float getPrecio() {
@@ -15,6 +24,5 @@ public class Plato {
 	public void setPrecio(float precio) {
 		Precio = precio;
 	}
-	private float Precio;
 
 }
