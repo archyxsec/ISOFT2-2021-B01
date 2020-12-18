@@ -65,14 +65,13 @@ El proyecto esta compuesto por 3 niveles en maven, en el primero encontramos el 
 
 
 <!-- GETTING STARTED -->
-## Getting Started
+## ¿Cómo empezar?
 
-This is an example of how you may give instructions on setting up your project locally.
-To get a local copy up and running follow these simple example steps.
+Pasos a seguir para poder usar nuestro proyecto en tu máquina local.
 
 ### Prerequisitos
 
-This is an example of how to list things you need to use the software and how to install them.
+Necesitamos tener maven instalado, en Debian/Ubuntu es muy fácil, se encuentra en el repositorio apt.
 * maven
   ```sh
    sudo apt install maven
