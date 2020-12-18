@@ -45,7 +45,6 @@
     <li><a href="#contributing">Contribuir</a></li>
     <li><a href="#license">Licencia</a></li>
     <li><a href="#contact">Contacto</a></li>
-    <li><a href="#acknowledgements">Acknowledgements</a></li>
   </ol>
 </details>
 
@@ -99,7 +98,7 @@ _Para más información consulta nuestra [Wiki](https://github.com/BlaZzes10/ISO
 <!-- ROADMAP -->
 ## Roadmap
 
-Puedes visualizar [issues abiertos](https://github.com/othneildrew/Best-README-Template/issues) para poder observar con más detalle nuestros issues y puedes crear el tuyo y colaborar con nosotros.
+Puedes visualizar [issues abiertos](https://github.com/BlaZzes10/ISOFT2-2021-B01/issues) para poder observar con más detalle nuestros issues y puedes crear el tuyo y colaborar con nosotros.
 
 
 
@@ -128,23 +127,6 @@ Proyecto desarrollado por equipo de desarrollo B01 en la asignatura ISO II
 Para contactarnos puedes enviar un correo al Secretario - tomasjesus.garcia@alu.uclm.es
 
 Link del proyecto: [ISOFT2-2021-B01](https://github.com/BlaZzes10/ISOFT2-2021-B01)
-
-
-
-<!-- ACKNOWLEDGEMENTS -->
-## Acknowledgements
-* [GitHub Emoji Cheat Sheet](https://www.webpagefx.com/tools/emoji-cheat-sheet)
-* [Img Shields](https://shields.io)
-* [Choose an Open Source License](https://choosealicense.com)
-* [GitHub Pages](https://pages.github.com)
-* [Animate.css](https://daneden.github.io/animate.css)
-* [Loaders.css](https://connoratherton.com/loaders)
-* [Slick Carousel](https://kenwheeler.github.io/slick)
-* [Smooth Scroll](https://github.com/cferdinandi/smooth-scroll)
-* [Sticky Kit](http://leafo.net/sticky-kit)
-* [JVectorMap](http://jvectormap.com)
-* [Font Awesome](https://fontawesome.com)
-
 
 
 
