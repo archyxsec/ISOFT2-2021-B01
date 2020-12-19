@@ -1,5 +1,8 @@
 package es.uclm.esi.isoft2b01.Iteracion2.Dominio;
 
+import java.util.ArrayList;
+
+
 public class GestorPedido {
 
 	/**
@@ -35,6 +38,27 @@ public class GestorPedido {
 	public double getCuenta(Pedido pedido1) {
 		pedido1.setEstado("Pagando");
 		return pedido1.getPrecio();
+	}
+	
+    public ArrayList <Comanda> crearComandas(int numeroComandas) {
+    	
+    	String platos[] = {"macarrones","espaguetis","arroz","pollo","ensalada","especial"};
+    	String bebidas[] = {"agua", "cocacola", "fanta", "cerveza", "vino"};
+		
+		ArrayList<Comanda> comandas = new ArrayList<Comanda>();
+		
+		for (int i = 0; i < numeroComandas; i++) {
+			Comanda comanda = new Comanda(platos[(int)(Math.random()*platos.length)],bebidas[(int)(Math.random()*bebidas.length)]);
+			comanda.setTiempotoma((int)(Math.random()*100));
+			comanda.setTiempopreparacion((int)(Math.random()*100));
+			comanda.setTiempoentrega((int)(Math.random()*100));
+			comandas.add(comanda);
+			
+		}
+
+		
+		return comandas;
+		
 	}
 
 

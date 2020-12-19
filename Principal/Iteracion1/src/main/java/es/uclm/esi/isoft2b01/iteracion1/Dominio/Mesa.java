@@ -5,6 +5,8 @@ public class Mesa {
 	private int Id_Mesa;
 	private EstadoMesa Estado = es.uclm.esi.isoft2b01.iteracion1.Dominio.EstadoMesa.Libre;
 	private Capacidad Capacidad;
+	private int comensales;
+	private int tiempopreparacion;
 	
 	public Mesa(int id_Mesa, Capacidad capacidad) {
 		Id_Mesa = id_Mesa;
@@ -48,11 +50,23 @@ public class Mesa {
 	public void cambiarEstado(EstadoMesa estado) {
 		this.Estado = estado;
 	}
+	public void setComensales(int comensales) {
+		this.comensales = comensales;
+	}
 
 
 	@Override
 	public String toString() {
 		return "Mesa [Id_Mesa=" + Id_Mesa + ", Estado=" + Estado + ", Capacidad=" + Capacidad + "]";
+	}
+
+	public void setTiempoPreparacion(int tiempo) {
+		this.tiempopreparacion = tiempo;
+	}
+
+	public int getTiempoPreparacion() {
+		// TODO Auto-generated method stub
+		return tiempopreparacion;
 	}
 	
 	

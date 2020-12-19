@@ -33,6 +33,11 @@
       <artifactId>Iteracion3</artifactId>
       <version>0.0.2-SNAPSHOT</version>
     </dependency>
+    <dependency>
+    	<groupId>es.uclm.esi.isoft2b01.Iteracion2</groupId>
+  		<artifactId>Iteracion2</artifactId>
+  		<version>0.0.3-SNAPSHOT</version>
+    </dependency>
   </dependencies>
 
   <build>

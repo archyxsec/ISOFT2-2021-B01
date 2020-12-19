@@ -28,6 +28,26 @@
       <version>4.11</version>
       <scope>test</scope>
     </dependency>
+    <dependency>
+      <groupId>es.uclm.esi.isoft2b01.iteracion3</groupId>
+      <artifactId>Iteracion3</artifactId>
+      <version>0.0.2-SNAPSHOT</version>
+    </dependency>
+    <dependency>
+      <groupId>es.uclm.esi.isoft2b01.iteracion4</groupId>
+      <artifactId>Iteracion4</artifactId>
+      <version>0.0.1-SNAPSHOT</version>
+    </dependency>
+    <dependency>
+      <groupId>es.uclm.esi.isoft2b01.iteracion1</groupId>
+      <artifactId>Iteracion1</artifactId>
+      <version>0.0.3-SNAPSHOT</version>
+    </dependency>
+    <dependency>
+    	<groupId>es.uclm.esi.isoft2b01.Iteracion2</groupId>
+  		<artifactId>Iteracion2</artifactId>
+  		<version>0.0.3-SNAPSHOT</version>
+    </dependency>
   </dependencies>
 
   <build>

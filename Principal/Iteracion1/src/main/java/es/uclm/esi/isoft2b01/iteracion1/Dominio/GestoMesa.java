@@ -28,6 +28,7 @@ public class GestoMesa {
 		
 		for (int i = 0; i < numeroMesas; i++) {
 			Mesa mesa = new Mesa(i+1,Capacidad.random());
+			mesa.setTiempoPreparacion((int)(Math.random()*100));
 			mesas.add(mesa);
 			
 		}
