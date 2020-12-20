@@ -32,17 +32,11 @@ public class PlatoTest {
 	@Test
 	public void testGetIngredientes() throws Exception {
 		Plato p = new Plato(null, 5f);
-		ArrayList<Ingredientes> ingr = new ArrayList(2);
+		ArrayList<Ingredientes> ingr = new ArrayList();
 		ingr.add(new Ingredientes("sal",10));
 		ingr.add(new Ingredientes("azucar",10));
 		p.setIngredientes(ingr);
 		assertEquals(p.getIngredientes(),ingr);
-		System.out.println("Prueba con otros ingredientes");
-		ArrayList<Ingredientes> ingrpr = new ArrayList(2);
-		ingrpr.add(new Ingredientes("sal",20));
-		ingrpr.add(new Ingredientes("limón",10));
-		assertEquals(p.getIngredientes(),ingrpr);
-		//throw new RuntimeException("not yet implemented");
 	}
 
 

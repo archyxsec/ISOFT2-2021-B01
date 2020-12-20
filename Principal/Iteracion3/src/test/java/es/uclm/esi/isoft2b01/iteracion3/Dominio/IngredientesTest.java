@@ -33,8 +33,7 @@ public class IngredientesTest {
 	@Test
 	public void Ingredientes() {
 		Ingredientes i = new Ingredientes("2-Pedro", 0);
-		assertEquals("2-Pedro",i.toString());
-		assertEquals("Juan",i.toString());
+		assertEquals("2-Pedro",i.nombre);
 	}
 	
 

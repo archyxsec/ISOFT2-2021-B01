@@ -31,9 +31,9 @@ public class GestorComandaTest {
 	@Test
 	public void ObtenerPlato() {
 		Plato plato = new Plato(null, 0);
-		ArrayList<Plato> platos = new ArrayList();
+		ArrayList<Plato> platos = new ArrayList<Plato>();
 		platos.add(plato);
-		assertEquals(plato,platos);
+		assertEquals(plato,platos.get(0));
 	}
 
 }

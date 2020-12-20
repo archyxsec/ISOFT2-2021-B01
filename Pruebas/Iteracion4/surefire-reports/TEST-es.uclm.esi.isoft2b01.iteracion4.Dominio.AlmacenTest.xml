@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="es.uclm.esi.isoft2b01.iteracion4.Dominio.AlmacenTest" time="0.002" tests="1" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="sun.desktop" value="gnome"/>
+    <property name="awt.toolkit" value="sun.awt.X11.XToolkit"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="sun.cpu.isalist" value=""/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.class.path" value="/home/developer/git/ISOFT2-2021-B01/Principal/Iteracion4/target/test-classes:/home/developer/git/ISOFT2-2021-B01/Principal/Iteracion4/target/classes:/home/developer/.m2/repository/junit/junit/4.11/junit-4.11.jar:/home/developer/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/home/developer/.m2/repository/es/uclm/esi/isoft2b01/iteracion3/Iteracion3/0.0.3-SNAPSHOT/Iteracion3-0.0.3-SNAPSHOT.jar:/home/developer/.m2/repository/es/uclm/esi/isoft2b01/iteracion1/Iteracion1/0.0.2-SNAPSHOT/Iteracion1-0.0.2-SNAPSHOT.jar:/home/developer/.m2/repository/es/uclm/esi/isoft2b01/Iteracion2/Iteracion2/0.0.3-SNAPSHOT/Iteracion2-0.0.3-SNAPSHOT.jar:"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="user.timezone" value=""/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="os.name" value="Linux"/>
+    <property name="user.country" value="ES"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.boot.library.path" value="/usr/lib/jvm/jdk1.8.0_271/jre/lib/amd64"/>
+    <property name="sun.java.command" value="/home/developer/git/ISOFT2-2021-B01/Principal/Iteracion4/target/surefire/surefirebooter4622577361873237700.jar /home/developer/git/ISOFT2-2021-B01/Principal/Iteracion4/target/surefire 2020-12-20T11-21-45_409-jvmRun1 surefire6629386783997177189tmp surefire_06151801185589056589tmp"/>
+    <property name="surefire.test.class.path" value="/home/developer/git/ISOFT2-2021-B01/Principal/Iteracion4/target/test-classes:/home/developer/git/ISOFT2-2021-B01/Principal/Iteracion4/target/classes:/home/developer/.m2/repository/junit/junit/4.11/junit-4.11.jar:/home/developer/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/home/developer/.m2/repository/es/uclm/esi/isoft2b01/iteracion3/Iteracion3/0.0.3-SNAPSHOT/Iteracion3-0.0.3-SNAPSHOT.jar:/home/developer/.m2/repository/es/uclm/esi/isoft2b01/iteracion1/Iteracion1/0.0.2-SNAPSHOT/Iteracion1-0.0.2-SNAPSHOT.jar:/home/developer/.m2/repository/es/uclm/esi/isoft2b01/Iteracion2/Iteracion2/0.0.3-SNAPSHOT/Iteracion2-0.0.3-SNAPSHOT.jar:"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="/home/developer"/>
+    <property name="user.language" value="es"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.home" value="/usr/lib/jvm/jdk1.8.0_271/jre"/>
+    <property name="basedir" value="/home/developer/git/ISOFT2-2021-B01/Principal/Iteracion4"/>
+    <property name="file.separator" value="/"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.X11GraphicsEnvironment"/>
+    <property name="surefire.real.class.path" value="/home/developer/git/ISOFT2-2021-B01/Principal/Iteracion4/target/surefire/surefirebooter4622577361873237700.jar:/home/developer/.m2/repository/org/jacoco/org.jacoco.agent/0.7.9/org.jacoco.agent-0.7.9-runtime.jar"/>
+    <property name="sun.boot.class.path" value="/usr/lib/jvm/jdk1.8.0_271/jre/lib/resources.jar:/usr/lib/jvm/jdk1.8.0_271/jre/lib/rt.jar:/usr/lib/jvm/jdk1.8.0_271/jre/lib/sunrsasign.jar:/usr/lib/jvm/jdk1.8.0_271/jre/lib/jsse.jar:/usr/lib/jvm/jdk1.8.0_271/jre/lib/jce.jar:/usr/lib/jvm/jdk1.8.0_271/jre/lib/charsets.jar:/usr/lib/jvm/jdk1.8.0_271/jre/lib/jfr.jar:/usr/lib/jvm/jdk1.8.0_271/jre/classes"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="1.8.0_271-b09"/>
+    <property name="user.name" value="developer"/>
+    <property name="path.separator" value=":"/>
+    <property name="os.version" value="4.19.0-12-amd64"/>
+    <property name="java.endorsed.dirs" value="/usr/lib/jvm/jdk1.8.0_271/jre/lib/endorsed"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="localRepository" value="/home/developer/.m2/repository"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="/tmp"/>
+    <property name="java.version" value="1.8.0_271"/>
+    <property name="user.dir" value="/home/developer/git/ISOFT2-2021-B01/Principal/Iteracion4"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="java.awt.printerjob" value="sun.print.PSPrinterJob"/>
+    <property name="sun.os.patch.level" value="unknown"/>
+    <property name="java.library.path" value="/usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.version" value="25.271-b09"/>
+    <property name="java.ext.dirs" value="/usr/lib/jvm/jdk1.8.0_271/jre/lib/ext:/usr/java/packages/lib/ext"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="52.0"/>
+  </properties>
+  <testcase name="testGetIngredientes" classname="es.uclm.esi.isoft2b01.iteracion4.Dominio.AlmacenTest" time="0"/>
+</testsuite>

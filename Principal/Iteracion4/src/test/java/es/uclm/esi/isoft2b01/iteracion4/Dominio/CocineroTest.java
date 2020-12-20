@@ -13,7 +13,7 @@ public class CocineroTest {
 
 	@Test
 	public void testAprovisionarAlmacen() {
-		fail("Not yet implemented");
+		//fail("Not yet implemented");
 		Cocinero cocinero = new Cocinero("001","Sergio", "Sanchez", "234567");
 		Plato p = new Plato(null, 5f);
 		ArrayList<Ingredientes> ingr = new ArrayList(2);

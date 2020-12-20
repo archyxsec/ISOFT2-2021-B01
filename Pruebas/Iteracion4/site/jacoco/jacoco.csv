@@ -1,0 +1,6 @@
+GROUP,PACKAGE,CLASS,INSTRUCTION_MISSED,INSTRUCTION_COVERED,BRANCH_MISSED,BRANCH_COVERED,LINE_MISSED,LINE_COVERED,COMPLEXITY_MISSED,COMPLEXITY_COVERED,METHOD_MISSED,METHOD_COVERED
+Iteracion4,es.uclm.esi.isoft2b01.iteracion4.Persistencia,GestorBD,20,0,0,0,5,0,2,0,2,0
+Iteracion4,es.uclm.esi.isoft2b01.iteracion4.Presentacion,IU_Almacen,293,0,36,0,76,0,21,0,3,0
+Iteracion4,es.uclm.esi.isoft2b01.iteracion4.Dominio,GestorAlmacen,85,47,4,2,19,15,5,4,2,4
+Iteracion4,es.uclm.esi.isoft2b01.iteracion4.Dominio,Cocinero,0,19,0,0,0,5,0,2,0,2
+Iteracion4,es.uclm.esi.isoft2b01.iteracion4.Dominio,Almacen,0,10,0,0,0,4,0,3,0,3

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>Cocinero.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">Iteracion4</a> &gt; <a href="index.source.html" class="el_package">es.uclm.esi.isoft2b01.iteracion4.Dominio</a> &gt; <span class="el_source">Cocinero.java</span></div><h1>Cocinero.java</h1><pre class="source lang-java linenums">package es.uclm.esi.isoft2b01.iteracion4.Dominio;
+
+import es.uclm.esi.isoft2b01.iteracion1.Dominio.Empleado;
+import es.uclm.esi.isoft2b01.iteracion3.Dominio.Plato;
+
+public class Cocinero extends Empleado {
+
+	public Cocinero(String id_Empleado, String nombre, String apellidos, String num_Cuenta) {
+<span class="fc" id="L9">		super(id_Empleado, nombre, apellidos, num_Cuenta);</span>
+		// TODO Auto-generated constructor stub
+<span class="fc" id="L11">	}</span>
+
+	/**
+	 * 
+	 * @param p
+	 */
+	public boolean aprovisionarAlmacen(Plato p) {
+		// TODO - implement Cocinero.aprovisionarAlmacen
+<span class="fc" id="L19">		boolean resultado = false;</span>
+<span class="fc" id="L20">		GestorAlmacen ga = new GestorAlmacen();</span>
+		
+<span class="fc" id="L22">		return resultado = ga.aprovisionarAlmacen(p);</span>
+		
+		//throw new UnsupportedOperationException();
+	}
+
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.7.9.201702052155</span></div></body></html>
