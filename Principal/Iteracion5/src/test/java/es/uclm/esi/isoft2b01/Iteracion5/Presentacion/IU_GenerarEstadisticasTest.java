@@ -6,9 +6,9 @@ import org.junit.Test;
 
 public class IU_GenerarEstadisticasTest {
 
-	@Test
+	/*@Test
 	public void test() {
-		fail("Not yet implemented");
-	}
+		assertEqual(2,2);
+	}*/
 
 }

@@ -40,24 +40,26 @@ public class GestorEstadisticasTest {
 		assertEquals(toStringComandas, GestorBD.comandas.toString());
 	}
 	
+	@Test
 	public void testpedirTiempoTomaComandas() {
 		//fail("Not yet implemented");
 		int tiempo = 0;
 		Iterator<Comanda> it = GestorBD.comandas.iterator();
 		while(it.hasNext()) {
-			assertTrue(tiempo < 0);
 			tiempo += it.next().getTiempotoma();
 		}
+		assertTrue(tiempo >= 0);
 	}
 	
+	@Test
 	public void testpedirTiempoPreparacionComidas() {
 		//fail("Not yet implemented");
 		int tiempo = 0;
 		Iterator<Comanda> it = GestorBD.comandas.iterator();
 		while(it.hasNext()) {
-			assertTrue(tiempo < 0);
 			tiempo += it.next().getTiempopreparacion();
 		}
+		assertTrue(tiempo >= 0);
 	}
 	
 	@Test
@@ -66,14 +68,14 @@ public class GestorEstadisticasTest {
 		int tiempo = 0;
 		Iterator<Comanda> it = GestorBD.comandas.iterator();
 		while(it.hasNext()) {
-			assertTrue(tiempo < 0);
 			tiempo += it.next().getTiempoentrega();
 		}
+		assertTrue(tiempo >= 0);
 		System.out.println("Tiempo medio preparación comandas: " + tiempo + " minutos");
 	}
 	
-	public void testpedirTiempoMedioMesasLibres() {
-		//fail("Not yet implemented");
-	}
+	/*public void testpedirTiempoMedioMesasLibres() {
+		fail("Not yet implemented");
+	}*/
 	/*metodos aux*/
 }
