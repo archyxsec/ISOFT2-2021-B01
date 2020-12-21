@@ -12,7 +12,8 @@ import es.uclm.esi.isoft2b01.iteracion1.Dominio.GestoMesa;
 import es.uclm.esi.isoft2b01.iteracion1.Dominio.Mesa;
 
 public class IU_GestionComanda {
-	public static void main(String args[]) {
+	//public static void main(String args[]) {
+	public static void IU_GestionComanda() {
 		Scanner sc;
 		sc = new Scanner(System.in);
 		int opcion;
