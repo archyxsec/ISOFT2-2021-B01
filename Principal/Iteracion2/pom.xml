@@ -31,7 +31,7 @@
     <dependency>
       <groupId>es.uclm.esi.isoft2b01.iteracion1</groupId>
       <artifactId>Iteracion1</artifactId>
-      <version>0.0.2-SNAPSHOT</version>
+      <version>0.0.3-SNAPSHOT</version>
     </dependency>
   </dependencies>
 

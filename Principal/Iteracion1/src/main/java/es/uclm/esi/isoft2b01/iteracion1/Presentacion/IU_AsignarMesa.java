@@ -10,7 +10,8 @@ import es.uclm.esi.isoft2b01.iteracion1.Dominio.GestorCamarero;
 import es.uclm.esi.isoft2b01.iteracion1.Dominio.Mesa;
 
 public class IU_AsignarMesa {
-	public static void main(String [] args) {
+	//public static void main(String [] args) {
+	public static void IU_AsignarMesa() {
 		GestoMesa gestorMesa = new GestoMesa();
 		GestorCamarero gestorCamarero = new GestorCamarero();
 		ArrayList<Mesa> mesas = gestorMesa.crearMesas(5);

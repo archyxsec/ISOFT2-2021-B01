@@ -5,7 +5,8 @@ import java.util.Scanner;
 import es.uclm.esi.isoft2b01.Iteracion5.Dominio.GestorEstadísticas;
 
 public class IU_GenerarEstadísticas {
-	public static void main(String args[]) {
+	//public static void main(String args[]) {
+	public static void IU_GenerarEstadísticas() {
 		Scanner sc = new Scanner(System.in);
 		GestorEstadísticas gs = new GestorEstadísticas();
 		int opcion;

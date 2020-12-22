@@ -19,5 +19,10 @@
 		</attributes>
 	</classpathentry>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="src" path="/Iteracion4"/>
+	<classpathentry kind="src" path="/Iteracion1"/>
+	<classpathentry kind="src" path="/Iteracion2"/>
+	<classpathentry kind="src" path="/Iteracion3"/>
+	<classpathentry kind="src" path="/Iteracion5"/>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>

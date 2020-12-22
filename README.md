@@ -135,8 +135,8 @@ Link del proyecto: [ISOFT2-2021-B01](https://github.com/BlaZzes10/ISOFT2-2021-B0
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
 [contributors-shield]: https://img.shields.io/badge/MIEMBROS-6-green?style=for-the-badge
 [contributors-url]: https://github.com/BlaZzes10/ISOFT2-2021-B01/issues/graphs/contributors
-[stars-shield]: https://img.shields.io/badge/Stars-2-blue?style=for-the-badge
+[stars-shield]: https://img.shields.io/badge/STARS-4-blue?style=for-the-badge
 [stars-url]: https://github.com/BlaZzes10/ISOFT2-2021-B01/stargazers
-[issues-shield]: https://img.shields.io/badge/ISSUES-3%20OPEN-yellow?style=for-the-badge
+[issues-shield]: https://img.shields.io/badge/ISSUES-0%20OPEN-yellow?style=for-the-badge
 [issues-url]: https://github.com/BlaZzes10/ISOFT2-2021-B01/issues
 [license-shield]: https://img.shields.io/github/license/othneildrew/Best-README-Template.svg?style=for-the-badge

@@ -10,8 +10,8 @@ import es.uclm.esi.isoft2b01.iteracion4.Dominio.Cocinero;
 import es.uclm.esi.isoft2b01.iteracion4.Dominio.GestorAlmacen;
 
 public class IU_Almacen {
-	public static void main (String[] args) {
-		
+	//public static void main (String[] args) {
+	public static void IU_Almacen() {	
 		GestorAlmacen gestor_almacen = new GestorAlmacen();
 		Cocinero cocinero = new Cocinero("10","Andrés","Carretero Sosa","ES4500000000012");
 		//Ingredientes pollo = new Ingredientes("pollo",3);
@@ -34,7 +34,7 @@ public class IU_Almacen {
 		Plato p2 = new Plato(lista_calamares,10.00f); 
 		
 		while (rol==-1) {
-			System.out.println("\nElige rol:\n1) Camarero\n2)Cocinero");
+			System.out.println("\nElige rol:\n1) Camarero\n2) Cocinero");
 			rol = pedir_numero();
 				if (rol == 1) {
 					System.out.println("Usted ha ingresado como camarero.\n");
@@ -79,7 +79,7 @@ public class IU_Almacen {
 		}
 		else {
 			while (!salir) {
-				System.out.println("Cocinero:\tDiga el plato que va aprovisionar en el almacén.");
+				System.out.println("Cocinero: Diga el plato que va aprovisionar en el almacén.");
 				System.out.println("1) Pollo al horno.");
 				System.out.println("2) Calamares");
 				int numero = pedir_numero();
